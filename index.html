@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./js/script.js" defer></script>
+    <title>Budgeting App</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1>BALANCE</h1>
+      <h2 id="main-balance">0$</h2>
+    </header>
+    <section id="breakdown">
+      <h3 id="breakdown-header">BREAKDOWN</h3>
+      <ul id="breakdown-list">
+        <li class="breakdown-item">
+          <h4>Description</h4>
+          <p>+10$</p>
+        </li>
+        <li class="breakdown-item">
+          <h4>Description</h4>
+          <p>+10$</p>
+        </li>
+        <li class="breakdown-item">
+          <h4>Description</h4>
+          <p>+10$</p>
+        </li>
+      </ul>
+    </section>
+    <section id="add-new-item">
+      <input
+        type="text"
+        name="new-item-description"
+        id="new-item-description"
+        class="new-item-input"
+      />
+      <input
+        type="number"
+        id="new-item"
+        placeholder="0$"
+        class="new-item-input"
+      />
+      <select
+        name="inc-ex-selector"
+        id="inc-ex-selector"
+        class="new-item-input"
+      >
+        <option value="income">+ Income</option>
+        <option value="expense">- Expense</option>
+      </select>
+      <button id="add-new-item-button">Add</button>
+    </section>
+  </body>
+</html>

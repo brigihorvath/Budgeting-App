@@ -1,0 +1,83 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+#header {
+  background-color: darkcyan;
+  color: white;
+  padding: 0.5em 1em 2em 1em;
+  line-height: 4em;
+}
+
+#breakdown-header {
+  display: flex;
+  align-items: center;
+  height: 3em;
+  border-top: 1px solid white;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top: -30px;
+  padding: 0.5em;
+  background-color: aliceblue;
+  font-size: 2em;
+}
+
+#breakdown-list {
+  list-style-type: none;
+}
+
+.breakdown-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  height: 4em;
+  border-bottom: 1px solid #e9ecf2;
+}
+
+#add-new-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 4em;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 0;
+}
+
+.new-item-input {
+  font-family: 'Poppins', sans-serif;
+  border-radius: 0;
+  border: 0.5px solid #e9ecf2;
+  border-right: 0;
+  padding: 0 2em;
+}
+
+#new-item {
+  width: 30%;
+}
+
+#new-item-description {
+  width: 35%;
+}
+
+#inc-ex-selector {
+  width: 20%;
+}
+
+#add-new-item-button {
+  width: 15%;
+  background-color: darkcyan;
+  border: none;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
